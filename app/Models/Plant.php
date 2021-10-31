@@ -7,4 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Plant extends Model {
     use HasFactory;
+    protected $table = 'plants';
+    protected $fillable = [
+        'name',
+        'species', 
+        'info', 
+        'image'
+    ]
 }
