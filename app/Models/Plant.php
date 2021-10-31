@@ -12,6 +12,6 @@ class Plant extends Model {
         'name',
         'species', 
         'info', 
-        'image'
+        // 'image'
     ]
 }
