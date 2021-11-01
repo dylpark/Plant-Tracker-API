@@ -17,7 +17,7 @@ class CreatePlantsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('species');
-            $table->string('info');
+            // $table->string('info');
             // $table->image('image');
             $table->timestamps();
         });
