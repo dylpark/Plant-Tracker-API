@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\PlantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('plants', [PlantController::class, 'index']);
+Route::get('/plants', [PlantController::class, 'index']);
 Route::post('/add-plant', [PlantController::class, 'store']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

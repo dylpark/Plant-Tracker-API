@@ -32,7 +32,7 @@ class PlantController extends Controller
             return response()->json([
                 'status'=> 422,
                 'validate_err'=> $validator->messages(),
-            ]);
+            ],422);
         }
         else
         {
@@ -50,3 +50,4 @@ class PlantController extends Controller
         }
 
     }
+}
