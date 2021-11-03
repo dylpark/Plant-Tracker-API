@@ -23,7 +23,7 @@ class PlantController extends Controller
         $validator = Validator::make($request->all(),[
             'name'=>'required|max:191',
             'species'=>'required|max:191',
-            // 'info'=>'required|email|max:191',
+            // 'info'=>'required|max:191',
             // 'image'=>'required|max:10|min:10',
         ]);
 
