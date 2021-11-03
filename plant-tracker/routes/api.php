@@ -15,8 +15,8 @@ use App\Http\Controllers\API\PlantController;
 |
 */
 
-Route::get('/plants', [PlantController::class, 'index']);
-Route::post('/add-plant', [PlantController::class, 'store']);
+Route::get('plants', [PlantController::class, 'index']);
+Route::post('add-plant', [PlantController::class, 'store']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
